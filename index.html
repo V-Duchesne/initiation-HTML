@@ -4,8 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <img src="src/img/Logo.png" alt="Ceci est mon logo">
+       <nav>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    
+    <!-- Ceci est un commentaire -->
+    <h1>Mes balises titres</h1>
+    <h2>ceci est la balise h2</h2>
+    <h3>ceci est la balise h3</h3>
+    <h4>ceci est la balise h4</h4>
+    <h5>ceci est la balise h5</h5>
+    <h6>ceci est la balise h6</h6>
+
+    <p class="policeMax">Neque porro quisquam </p>
+    <p><em>est qui dolorem ipsum quia dolor </em><br>
+    <i>sit amet, consectetur</i>, adipisci velit...<br>
+    <STRONG>Neque porro quisquam est</STRONG> <br>
+    qui dolorem ipsum quia dolor <br>
+    <del>sit amet, consectetur, adipisci velit...</del></p>
+    <hr style="margin-bottom: 3em;">
+
+    <a href="http://google.be" title="Google" target="_blank" rel="noopener">Cliquez ici pour vous rendre sur Google.</a>
+    <div>
+        <img src="https://jardinage.lemonde.fr/images/dossiers/2017-08/chaton-161238.jpg" alt="Image de chaton" >
+    </div>
+    
+    <div>
+        <img src="src/img/david.jpg" alt="david image">
+        <p class="policeMax">Ceci est une image de David Goodenough</p>
+    </div>
+
+    <h3>Listes ordonnées</h3>
+    <ol class="nomDeLaClass">
+        <li id="nomDeLId">premier element</li>
+        <li>second element</li>
+        <li>trois element</li>
+        <li>quatre element</li>
+        <li>cinq element</li>
+    </ol>
+
+    <ol start="6">
+        <li>premier element</li>
+        <li>second element</li>
+        <li>trois element</li>
+        <li>quatre element</li>
+        <li>cinq element</li>
+    </ol>
+
+    <ol reversed>
+        <li>premier element</li>
+        <li>second element</li>
+        <li>trois element</li>
+        <li>quatre element</li>
+        <li>cinq element</li>
+    </ol>
+    <h3>Listes non-ordonées</h3>
+    <ul>
+        <li><a href="#">premier element</a></li>
+        <li>second element</li>
+        <li>trois element</li>
+        <li>quatre element</li>
+        <li>cinq element</li>
+    </ul>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+    <h3>Les Tableaux</h3>
+    <table>
+        <caption>Ceci est le titre de mon tableau</caption>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Duck</td>
+            <td>Riri</td>
+            <td>12</td>
+            <td>Riri@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Duck</td>
+            <td>Fifi</td>
+            <td>13</td>
+            <td>Fifi@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Duck</td>
+            <td>Loulou</td>
+            <td>14</td>
+            <td>Loulou@gmail.com</td>
+        </tr>
+    </table>
+
+
+    <form>
+        <p><input type="text" placeholder="Nom" required></p>
+        <p><input type="color"></p>
+        <p><input type="checkbox"></p>
+        <p><input type="date"></p>
+        <p><input type="datetime-local"></p>
+        <p><input type="email"></p>
+        <p><input type="file"></p>
+        <p><input type="image" src="src/img/david.jpg"></p>
+        <p><input type="month"></p>
+        <p><input type="number"></p>
+        <p><input type="password" required></p>
+        <p><input type="radio"></p>
+        <p><input type="range"></p>
+        <p><input type="search"></p>
+        <p><input type="tel"></p>
+        <p><input type="time"></p>
+        <p><input type="url"></p>
+        <p><input type="week"></p>
+
+        <label for="">Entrez votre nom</label>
+        <p><input type="text" placeholder="Nom" required></p>
+
+        <div>
+            <select>
+            <option value="Pommes">Pommes</option>
+            <option value="Poires">Poires</option>
+            <option value="Pêches">Pêches</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <textarea name="" id="" cols="50" rows="20"></textarea>
+        </div>
+        <button type="submit">Valider mon formulaire</button>
+    </form>
+
+    <h3>Les types de balise (display)</h3>
+    <p>form, h1 à h6, hr, li, ol, ul, p et la balise table sont des balises de type bloc</p>
+    <p>ceci est un autre paragraphe, et même si dans vsc je le met à la suite d'une autre balise, ce paragraphe s'inscrira en dessous du précédent</p>
+    <p>a, br, button, em, i, img, input, label, meter, progress, select, span, strong, textarea</p>
+    <p>sont des balises inline, cad qu'elles occupent uniquement l'espace dont elles ont besoin.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo rerum qui eligendi laboriosam vel architecto 
+        <span style="color: red" class="police">atque harum at explicabo culpa quae dolor ratione quibusdam, molestiae reprehenderit reiciendis voluptatem, </span>
+        aspernatur modi?Unde illo alias eaque temporibus possimus distinctio quis commodi exercitationem illum perspiciatis 
+        in velit voluptatum, magnam natus, voluptate expedita porro quaerat, animi ipsa. Cumque quo reprehenderit quos excepturi ad est. </p>
+
+    <section style="background-color: burlywood; margin-bottom: 3rem;">
+        <h3>ceci est le contenu de ma section</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ab beatae. Voluptates dicta ad inventore repellendus! Quae voluptatum illo, vero esse numquam illum magni praesentium ab obcaecati aut adipisci amet.</p>
+        <form>
+            <input type="text" name="" id=""><br>
+            <input type="email" name="" id=""><br>
+            <button type="submit">Valider</button>
+        </form>
+    </section>
+    <p>en dehors de ma section</p>
+    <footer style="background-color: black; padding: 2rem;"><p style="color: white;">2020 - Vincent Duchesne</p></footer>
 </body>
 </html>
